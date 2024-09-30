@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const sourceDir = 'source/webapp';
-const targetDir = 'target/';
+const targetDir = 'target_bsp/';
 
 function transformFileName(filePath) {
   const relativePath = path.relative(sourceDir, filePath);

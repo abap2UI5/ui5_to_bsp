@@ -1,4 +1,4 @@
-CLASS z2ui5_cl_app_server_js DEFINITION
+CLASS z2ui5_cl_app_cc_Server_js DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -14,7 +14,7 @@ CLASS z2ui5_cl_app_server_js DEFINITION
 ENDCLASS.
 
 
-CLASS z2ui5_cl_app_server_js IMPLEMENTATION.
+CLASS z2ui5_cl_app_cc_Server_js IMPLEMENTATION.
 
   METHOD get.
 
@@ -125,7 +125,8 @@ CLASS z2ui5_cl_app_server_js IMPLEMENTATION.
              `                    }` && |\n|  &&
              `                    ; if (z2ui5.oResponse.PARAMS?.S_FOLLOW_UP_ACTION?.CUSTOM_JS) {` && |\n|  &&
              `                        setTimeout(() => {` && |\n|  &&
-             `                            let mParams = z2ui5.oResponse?.PARAMS.S_FOLLOW_UP_ACTION.CUSTOM_JS.split("'");` && |\n|  &&
+             `                            let mParams = z2ui5.oResponse?.PARAMS.S_FOLLOW_UP_ACTION.CUSTOM_JS.split` && |\n|  &&
+             `("'");` && |\n|  &&
              `                            let mParamsEF = mParams.filter((val, index) => index % 2)` && |\n|  &&
              `                            if (mParamsEF.length) {` && |\n|  &&
              `                                z2ui5.oController.eF.apply(undefined, mParamsEF);` && |\n|  &&
@@ -139,7 +140,8 @@ CLASS z2ui5_cl_app_server_js IMPLEMENTATION.
              `                    if (z2ui5.oResponse.PARAMS?.S_VIEW?.XML) {` && |\n|  &&
              `                        if (z2ui5.oResponse.PARAMS?.S_VIEW?.XML !== '') {` && |\n|  &&
              `                            z2ui5.oController.ViewDestroy();` && |\n|  &&
-             `                            await z2ui5.oController.displayView(z2ui5.oResponse.PARAMS.S_VIEW.XML, z2ui5.oResponse.OVIEWMODEL);` && |\n|  &&
+             `                            await z2ui5.oController.displayView(z2ui5.oResponse.PARAMS.S_VIEW.XML, z` && |\n|  &&
+             `2ui5.oResponse.OVIEWMODEL);` && |\n|  &&
              `                            return;` && |\n|  &&
              `                        }` && |\n|  &&
              `                    }` && |\n|  &&
