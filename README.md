@@ -2,12 +2,19 @@
 
 🚧 transform webapp to bsp 🚧 
 
-#### Run
+#### Run ui5app->bsp
 
 ```
 npm i
-node transform.js
+node transform2bsp.js
 ```
+#### Run ui5app->abapstring
+
+```
+npm i
+node transform2abap.js
+```
+
 #### Script
 
 ```js
