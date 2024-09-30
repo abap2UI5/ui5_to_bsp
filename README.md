@@ -4,6 +4,14 @@
 
 transform webapp to bsp
 
+#### Run
+
+```
+npm i
+node transform.js
+```
+#### Script
+
 ```js
 
 const fs = require('fs-extra');
