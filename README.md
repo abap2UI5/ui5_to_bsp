@@ -1,6 +1,6 @@
 # webapp_transform_to
 
-🚧 transform webapp to bsp 🚧 
+🚧 transform webapp to bsp/stringifiedABAP 🚧 
 
 #### Run ui5app->bsp
 
